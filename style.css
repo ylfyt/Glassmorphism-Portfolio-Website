@@ -23,16 +23,17 @@
 .glass {
     min-height: 95vh;
     width: 95%;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(8px);
     z-index: 12;
     border-radius: 25px;
     margin: auto;
     margin-top: 24px;
     position: relative;
+    padding-bottom: 30px;
 }
 .glass .navbar {
     margin: auto;
@@ -69,9 +70,12 @@
 }
 
 .glass .contents {
-    width: 40%;
-    margin: 100px 0 0 50px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: white; */
 }
+
 .contents h2 {
     font-size: 27px;
     font-weight: 600;
@@ -84,6 +88,31 @@
 .contacts .glass {
     margin-bottom: 24px;
 }
+
+/* HOME PAGE */
+.home .glass .contents {
+    text-align: center;
+}
+.home .contents .profile {
+    text-align: center;
+}
+
+.home .contents .profile img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+.home .contents .quotes {
+    margin-top: 35px;
+    /* margin-bottom: 30px; */
+}
+
+.home .contents .profile h3 {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+/* END HOME PAGE */
 
 .circle1,
 .circle2 {
@@ -115,31 +144,42 @@
         margin: 10px 0 20px 0;
     }
     .glass .contents {
-        margin: 30px 0 0 20px;
-        width: 70%;
+        /* margin: 30px 0 0 20px; */
+        width: 95%;
     }
     .glass .contents h2 {
         font-size: 20px;
     }
 
+    .home .glass .contents .profile img {
+        width: 300px;
+        height: 300px;
+    }
+
     .circle1,
     .circle2 {
-        width: 250px;
-        height: 250px;
+        width: 230px;
+        height: 230px;
     }
 }
 @media (max-width: 410px) {
     .glass {
-        height: 100vh;
+        /* height: 100vh; */
         width: 100%;
         border-radius: 0px;
     }
     .glass .navbar {
         padding: 15px 10px;
     }
+
+    .home .glass .contents .profile img {
+        width: 200px;
+        height: 200px;
+    }
+
     .circle1,
     .circle2 {
-        width: 250px;
-        height: 250px;
+        width: 150px;
+        height: 150px;
     }
 }
