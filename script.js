@@ -4,9 +4,9 @@ function getRandomColor() {
         ["#9ef7f1", "#03eeff"],
         ["#fce5c7", "#f7a33b"],
         ["#ffc4fc", "#ff4af6"],
-        ["#f8fab9", "#f9ff45"], // Yellow
+        // ["#f8fab9", "#f9ff45"], // Yellow
     ];
-    var idx = Math.floor(Math.random() * 5);
+    var idx = Math.floor(Math.random() * colors.length);
     var color = colors[idx];
 
     return color;
