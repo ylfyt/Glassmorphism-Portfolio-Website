@@ -144,7 +144,7 @@
 }
 
 .tools {
-    padding-top: 100px;
+    padding-top: 30px;
 }
 /* END ABOUT */
 .card {
@@ -279,7 +279,6 @@ a {
 .iconSet .icon {
     margin: 0 20px;
     text-align: center;
-    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -289,10 +288,21 @@ a {
     transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
+.icon3 {
+    background-color: rgba(red, green, blue, 0);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 50%;
+}
+
 .iconSet .icon span {
     display: block;
     height: 90px;
     width: 90px;
+    /* cursor: pointer; */
     background: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
     position: relative;
@@ -301,8 +311,13 @@ a {
     transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .iconSet .icon span i {
-    line-height: 90px;
+    line-height: 85px;
     font-size: 50px;
+}
+
+.iconSet .icon span i img {
+    width: 60px;
+    height: 60px;
 }
 
 .iconSet .icon .tooltip {
@@ -321,20 +336,21 @@ a {
     transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     white-space: nowrap;
 }
-.iconSet .icon:hover .tooltip {
+.icon3:hover .tooltip {
     top: -60px;
     opacity: 1;
     pointer-events: auto;
 }
-.iconSet .icon:hover span i {
+
+.icon3:hover span i {
     color: #f6416c;
 }
-.iconSet .icon:hover span,
-.iconSet .icon:hover .tooltip {
+.icon3:hover span,
+.icon3:hover .tooltip {
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
-.iconSet .social:hover span,
-.iconSet .social:hover .tooltip {
+.icon3:hover span,
+.icon3:hover .tooltip {
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(8px);
 }
@@ -365,8 +381,13 @@ a {
     }
 
     .iconSet .icon span i {
-        line-height: 75px;
+        line-height: 70px;
         font-size: 35px;
+    }
+
+    .iconSet .icon span i img {
+        width: 50px;
+        height: 50px;
     }
 
     .wrapper .icon span {
@@ -419,8 +440,13 @@ a {
     }
 
     .iconSet .icon span i {
-        line-height: 60px;
+        line-height: 55px;
         font-size: 25px;
+    }
+
+    .iconSet .icon span i img {
+        width: 40px;
+        height: 40px;
     }
 
     /* contact */
@@ -448,7 +474,7 @@ a {
 @media (max-width: 410px) {
     .main {
         /* background-image: linear-gradient(to right bottom, #ff9a9e 10%, #f6416c 100%); */
-        background: url("img/bg3.jpg");
+        background: url("img/bg4.jpg");
         background-attachment: fixed;
         background-size: cover;
         background-position: center;
