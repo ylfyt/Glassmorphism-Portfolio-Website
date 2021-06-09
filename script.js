@@ -1,3 +1,31 @@
+function navLinkColl(){
+    // var bungkus = document.getElementById("navbarNavAltMarkup");
+    // var button = document.getElementById("buttonNavbar");
+    // if (bungkus.classList.contains("show"))
+    // {
+    //         button.classList.add("collapsed");
+    //         button.setAttribute("aria-expanded", false);
+    //         bungkus.classList.remove("show");
+    //         alert("dsad");
+    // }
+
+    var bungkuss = document.getElementsByClassName("navbar-collapse");
+    var buttons = document.getElementsByClassName("navbar-toggler");
+    if (bungkuss[0].classList.contains("show"))
+    {
+        for (let i = 0; i < buttons.length; i++) {
+            const element = buttons[i];
+            element.classList.add("collapsed");
+            element.setAttribute("aria-expanded", false);
+        }
+
+        for (let i = 0; i < bungkuss.length; i++) {
+            const element = bungkuss[i];
+            element.classList.remove("show");   
+        }
+    }
+}
+
 function getRandomColor() {
     var colors = [
         ["#ff9a9e", "#f6416c"],
@@ -18,3 +46,4 @@ function setBackgroundColor() {
     document.getElementById("circle1").style.background = color[1];
     document.getElementById("circle2").style.background = color[1];
 }
+
